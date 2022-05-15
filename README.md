@@ -17,7 +17,7 @@ incrementando todos os novos dados que são inseridos ,e o outro campo é o <b>n
             primary key (id)
         );
        
-  <h3>Agora fazer as funcionalidades da api que van ser <b>(Criar um usuário,deletar usuário ,atualizar o usuário e visualizar o usuário)</b>.</h3>
+  <h3>Agora fazer as funcionalidades da api que vão ser <b>(Criar um usuário,deletar usuário ,atualizar o usuário e visualizar o usuário)</b>.</h3>
 <ol>
 <li>Cadastrar o usuário na tabela.
   <ul>
@@ -30,12 +30,14 @@ incrementando todos os novos dados que são inseridos ,e o outro campo é o <b>n
 </li>
 <li>Deletar o usuário da tabela.
   <ul>
+    <li>Verificar se o valor da query url acao é </b>"deletar_cliente"</b>.</li>
     <li>Verificar se existi a query url <b>'id'</b>.</li>
     <li>Deletar o usuário do banco com <a href="https://www.w3schools.com/sql/sql_delete.asp">DELETE</a> onde o id do usuário vai ser o valor que você deu na query url.</li>
   </ul>
 </li>
 <li>Atualizar o usuário.
   <ul>
+    <li>Verificar se o valor da query url acao é </b>"atualizar_cliente"</b>.</li>
     <li>Verificar se existi a query url <b>'id'</b>.</li>
     <li>Verificar se existi a query url <b>'val'</b>.</li>
     <li>Verificar se existi o valor do id que foi passado na query url no banco de dados usando o <a href="https://www.w3schools.com/sql/sql_select.asp">"SELECT"</a>.</li>
@@ -44,6 +46,7 @@ incrementando todos os novos dados que são inseridos ,e o outro campo é o <b>n
 </li>
 <li>Puxar a informação de um usuário individual.
   <ul>
+    <li>Verificar se o valor da query url acao é </b>"visualizar_cliente"</b>.</li>
     <li>Verificar se existi a query url <b>'id'</b>.</li>
     <li>Usar o <b>"SELECT"</b> onde o campo <b>Id</b> vai ser o valor do que você passou no id da query url</li>
     <li>Se passar na validação os dados van ser puxados em formato <b>json</b></li>
